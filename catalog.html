@@ -28,8 +28,6 @@
           <li><a href="proposal.html">Спецпредложения</a></li>
           <li><a href="delivery.html">Доставка</a></li>
           <li><a href="contacts.html">Контакты</a></li>
-
-
         </ul>
       </nav>
     </header>
@@ -41,8 +39,63 @@
              <li>Перфораторы</li>
             </ul>
         <section>
-             <h2>Фильтр товаров</h2>
-            <!-- Здесь будет форма -->
+          <h2>Фильтр товаров</h2>
+          <ul>
+            <li>по цене</li>
+            <li>по типу</li>
+            <li>по функционалу</li>
+            <li>
+              <img src="" alt="по возрастанию">
+              <img src="" alt="по убыванию">
+            </li>
+          </ul>
+          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+            <input type="range" min="0" max="30000" step="500">
+            <fieldset>
+              <legend>
+                Производители
+              </legend>
+              <ul>
+                <li>
+                  <input id="filter-Bosch" type="checkbox" name="Bosch" checked>
+                  <label for="filter-Bosch">Bosch</label>
+                </li>
+                <li>
+                    <input id="filter-Interscol" type="checkbox" name="Interscol">
+                    <label for="filter-Interscol">Интерскол</label>
+                </li>
+                <li>
+                  <input id="filter-Makita" type="checkbox" name="Makita" checked>
+                  <label for="filter-Makita">Makita</label>
+                </li>
+                <li>
+                  <input id="filter-Dewalt" type="checkbox" name="Dewalt">
+                  <label for="filter-Dewalt">Dewalt</label>
+                </li>
+                <li>
+                  <input id="filter-Hitachi" type="checkbox" name="Hitachi">
+                  <label for="filter-Hitachi">Hitachi</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>
+                Питание
+              </legend>
+              <ul>
+                <li>
+                  <input id="filter-battery" type="radio" name="product-group" value="battery" checked>
+                  <label for="filter-battery">Аккумуляторные</label>
+                </li>
+                <li>
+                  <input id="filter-network" type="radio" name="product-group" value="network">
+                  <label for="filter-network">Сетевые</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="submit">Показать</button>
+          </form>
+
         </section>
         <h2>Модели перфораторов</h2>
         <ul>
