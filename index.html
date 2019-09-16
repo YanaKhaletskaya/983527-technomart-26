@@ -5,13 +5,12 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
-
        <header>
-        <a><img src="img/content_img/logo-technomart.svg"  alt="логотип Техномарт"></a>
+        <a><img src="img/content_img/logo-technomart.svg"  alt="Логотип интернет-магазина Техномарт"></a>
         <input type="text" placeholder="Поиск">
-        <a href="" type="button">Закладки</a>        
-        <a href="" type="button">Корзина</a>
-        <buttona href="" type="button">Оформить заказ</a>
+        <a href="">Закладки</a>        
+        <a href="">Корзина</a>
+        <a href="">Оформить заказ</a>
         <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
         <div>
           <p>+7(812)555-05-55</p>
@@ -20,14 +19,15 @@
         <a href="">Войти</a>
         <a href="">Регистрация</a>
         <section>
-          <h2>Регистрация</h2>
-          <form class="registration" method="post" action="https://echo.htmlacademy.ru">
+          <h2>Войти</h2>
+          <form class="inter" method="post" action="https://echo.htmlacademy.ru">
             <p>
               <label for="user-login">Логин</label>
               <input id="user-login" type="text" name="login" placeholder="Логин">
             </p>
-            <p><label for="user-password">Пароль</label>
-              <input id="user-password" type="text" name="password" placeholder="Ведите пароль">
+            <p>
+              <label for="user-password">Пароль</label>
+              <input id="user-password" type="password" name="password" placeholder="Ведите пароль">
             </p>
             <p>
               <label>
@@ -38,6 +38,24 @@
              <button type="submit">Войти</button>
           </form>          
         </section>
+        <section><h2>Регистрация</h2>
+          <form class="registration" method="post" action="https://echo.htmlacademy.ru">
+            <p>
+              <label for="user-login">Логин</label>
+              <input id="user-login" type="text" name="login" placeholder="Логин">
+            </p>
+            <p>
+              <label for="user-password">Пароль</label>
+              <input id="user-password" type="password" name="password" placeholder="Ведите пароль">
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" name="remember">
+                Запомните меня 
+              </label>
+            </p>
+             <button type="submit">Войти</button>
+          </form>    </section>
       <nav>
         <ul>
           <li><a href="main.html">Главная</a></li>
@@ -51,7 +69,7 @@
       </nav>
     </header>
     <main>
-      <h1>Интернет-магазин "ТЕХНОМАРТ"</h1>
+      <h1 class=""visually-hidden"">Интернет-магазин "ТЕХНОМАРТ"</h1>
       <section>
         <h2>Все категории товаров и услуг</h2>
         <ul>
@@ -223,7 +241,7 @@
 
     </main>
     <footer>
-      <a href=""><img src="" alt="логотип"></a>
+      <a href=""><img src="" alt=Логотип интернет-магазина Техномарт></a>
       <ul>
           <li><a href="company.html">Компания</a></li>
           <li><a href="news.html">Новости</a></li>
@@ -231,6 +249,7 @@
           <li><a href="delivery.html">Доставка</a></li>
           <li><a href="contacts.html">Контакты</a></li>        
       </ul>
+      <img src="img/content_img/map.png" alt="Адрес магазина техномарт:г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55">
       <p>
          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
           +7 (812) 555-05-55
