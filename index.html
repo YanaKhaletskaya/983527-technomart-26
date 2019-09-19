@@ -3,14 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
        <header>
-        <a><img src="img/content_img/logo-technomart.svg"  alt="Логотип интернет-магазина Техномарт"></a>
+         <section class="upper-navigation">
+        <a ><img class="logo"src="img/content_img/logo-technomart.svg"  alt="Логотип интернет-магазина Техномарт"></a>
         <input type="text" placeholder="Поиск">
-        <a href="">Закладки</a>        
+        <a href="">Закладки</a>
         <a href="">Корзина</a>
         <a href="">Оформить заказ</a>
+        </section>
         <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
         <div>
           <p>+7(812)555-05-55</p>
@@ -32,11 +36,11 @@
             <p>
               <label>
                 <input type="checkbox" name="remember">
-                Запомните меня 
+                Запомните меня
               </label>
             </p>
              <button type="submit">Войти</button>
-          </form>          
+          </form>
         </section>
         <section><h2>Регистрация</h2>
           <form class="registration" method="post" action="https://echo.htmlacademy.ru">
@@ -51,13 +55,13 @@
             <p>
               <label>
                 <input type="checkbox" name="remember">
-                Запомните меня 
+                Запомните меня
               </label>
             </p>
              <button type="submit">Войти</button>
           </form>    </section>
-      <nav>
-        <ul>
+      <nav >
+        <ul class="navigation">
           <li><a href="main.html">Главная</a></li>
           <li><a href="company.html">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
@@ -69,14 +73,14 @@
       </nav>
     </header>
     <main>
-      <h1 class=""visually-hidden"">Интернет-магазин "ТЕХНОМАРТ"</h1>
+      <h1 class="visually-hidden"> Интернет-магазин "ТЕХНОМАРТ"</h1>
       <section>
         <h2>Все категории товаров и услуг</h2>
         <ul>
-            <li>
-                <h3><a href="">Дрели</a></h3>
-               <span>соседям на радость</span>
-               <h4><a href="">открыть каталог</a></h4>
+          <li>
+              <p>Дрели</p>
+              <span>Cоседям на радость!</span>
+              <a href="">открыть каталог</a>
               </li>
           <li>
             <h3><a href="">Материалы</a></h3>
@@ -87,7 +91,7 @@
              <span>на все случаи</span>
             </li>
             <li>
-                <h3><a href="">Техника</a></h3>
+              <h3><a href="">Техника</a></h3>
                <span>для стройки</span>
               </li>
               <li>
@@ -201,20 +205,18 @@
         </section>
         <section>
           <h2>Сервисы</h2>
-          <p>
-            <span>Хороший интернет-магазин отличается от плохого не только ценами!</span>
-            <span>Мы стараемся изо всех сил, чтобы сделать вашипокупки приятными</span>
-           </p>
-           <section>
-             <h3>Условия покупки</H3>
+          <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
+          <p>Мы стараемся изо всех сил, чтобы сделать вашипокупки приятными</p>
+          <section>
+             <h3>Условия покупки</h3>
              <!--Здесь будет форма-->
            </section>
            <section>
              <h3>Доставка</h3>
              <p>
-                Мы с удовольствием доставим ваш товар прямо 
+                Мы с удовольствием доставим ваш товар прямо
                 к вашему подъезду совершенно бесплатно!
-                Ведь мы неплохо заработаем, 
+                Ведь мы неплохо заработаем,
                 поднимая его на ваш этаж!</p>
                 <img src="img/background_img/transporting.png" alt="доставка">
            </section>
@@ -223,7 +225,7 @@
           <h2>Компания "ТЕХНОМАРТ"</h2>
           <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
             Мы можем доставить ваш товар в самые отдаленные точки России!
-            Техномарт работает со многими транспортными компаниями: 
+            Техномарт работает со многими транспортными компаниями:
           </p>
           <ul>
             <li>Деловые линии</li>
@@ -236,7 +238,7 @@
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис</p>
           <!--тут будет карта-->
-          <button type="button">Заблудились? Напишите нам</button>
+          <a href="">Заблудились? Напишите нам</a>
         </section>
 
     </main>
@@ -247,7 +249,7 @@
           <li><a href="news.html">Новости</a></li>
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="contacts.html">Контакты</a></li>        
+          <li><a href="contacts.html">Контакты</a></li>
       </ul>
       <img src="img/content_img/map.png" alt="Адрес магазина техномарт:г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55">
       <p>
@@ -268,11 +270,11 @@
             <li><a href="">Инстаграм</a></li>
           </ul>
           <p>
-              Обратная связь: 
+              Обратная связь:
               <a href="https://htmlacademy.ru">mail@htmlacademe.ru</a>
             </p>
           <p>
-              Разработано: 
+              Разработано:
               <a href="https://htmlacademy.ru">htmlacademy.ru</a>
             </p>
 
