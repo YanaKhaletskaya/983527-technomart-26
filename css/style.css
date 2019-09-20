@@ -7,11 +7,21 @@ body {
   font-weight: 400;
   color: #ffffff;
   text-transform: uppercase;
-  background-color: #f3f7f8;
+  background-color: #ffffff;
   background-position: top center;
   background-repeat: no-repeat;
 }
-.header {
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+header {
   background-color:#f3f7f8;
 }
 a {
@@ -99,4 +109,52 @@ a {
   display: none;
 }
 
+.service {
+  color: #000000;
+  background-color: #f4f7f9;
+  background-image: url("img/background_img/background_service.png");
+  background-position: 0 0;
+  font-family: "PT Sans";
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: none;
+
+}
+
+.service h2 {
+  font-size: 30px;
+  line-height: 42px;
+
+}
+.select-service{
+  list-style: none;
+  }
+.select-service button {
+  width: 240px;
+  height: 61px;
+  box-shadow: 0 1px 0 #293449, inset 0 1px 0 #405069;
+  background-color: #32425c;
+  color: #ffffff;
+  font-family: Cuprum;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.select-service button:hover,
+.select-service button:focus {
+  background-color: #293449;
+}
+.select-service button:active {
+  background-color: #ffffff;
+    color: #32425c;
+    font-family: Cuprum;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #ffffff;
+    font-family: Cuprum;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 30px;
+}
 
