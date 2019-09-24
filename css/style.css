@@ -6,7 +6,6 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: #ffffff;
-  text-transform: uppercase;
   background-color: #ffffff;
   background-position: top center;
   background-repeat: no-repeat;
@@ -22,7 +21,7 @@ body {
   overflow: hidden;
 }
 header {
-  background-color:#f3f7f8;
+  background-color: #f3f7f8;
 }
 a {
   text-decoration: none;
@@ -46,16 +45,16 @@ a {
   font-size: 21px;
   font-weight: 400;
   line-height: 21px;
- }
- .adress {
+}
+.adress {
   color: #32425c;
   font-family: Cuprum;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   text-transform: none;
- }
-.upper-navigation{
+}
+.upper-navigation {
   color: #ffffff;
   font-family: Cuprum;
   font-size: 17px;
@@ -72,9 +71,22 @@ a {
 }
 .user-navigation a {
   color: #000000;
+  background-color: #ffffff;
 }
-
-.navigation{
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #ee3643;
+  font-family: Cuprum;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 21px;
+}
+.user-navigation a:active {
+  opacity: 0.3;
+  color: #000000;
+  font-family: Cuprum;
+}
+.navigation {
   color: #ffffff;
   font-family: Cuprum;
   font-size: 17px;
@@ -82,7 +94,7 @@ a {
   line-height: 20px;
   box-shadow: inset 0 -5px 0 #293449;
   background-color: #32425c;
- }
+}
 .upper-navigation a,
 .navigation a {
   color: #ffffff;
@@ -91,7 +103,7 @@ a {
 .navigation a:hover,
 .upper-navigation a:focus,
 .navigation a:focus {
-  background-color:#293449;
+  background-color: #293449;
 }
 .navigation,
 .upper-navigation,
@@ -118,17 +130,26 @@ a {
   font-weight: 400;
   line-height: 24px;
   text-transform: none;
-
 }
 
 .service h2 {
+  font-family: Cuprum;
   font-size: 30px;
-  line-height: 42px;
-
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
 }
-.select-service{
+.delivery {
+  color: #32425c;
+  font-family: Cuprum;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.select-service {
   list-style: none;
-  }
+}
 .select-service button {
   width: 240px;
   height: 61px;
@@ -146,15 +167,60 @@ a {
 }
 .select-service button:active {
   background-color: #ffffff;
-    color: #32425c;
-    font-family: Cuprum;
-    font-size: 21px;
-    font-weight: 700;
-    line-height: 30px;
-    color: #ffffff;
-    font-family: Cuprum;
-    font-size: 21px;
-    font-weight: 700;
-    line-height: 30px;
+  color: #32425c;
+  font-family: Cuprum;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.about-us {
+  background-color: #ffffff;
+  color: #000000;
+}
+.about-us h2 {
+  font-family: Cuprum;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.about-us p {
+  font-family: "PT Sans";
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: none;
+}
+.line li::before {
+  width: 25px;
+  height: 2px;
+  list-style: none;
+  background-color: #ee3643;
+}
+.click {
+  color: #ffffff;
+  font-family: Cuprum;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #ee3643;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-inline-start: 47px;
+  padding-right: 47px;
+  padding-left: 47px;
 }
 
+footer {
+  background-color: #32425c;
+}
+
+.navigation-footer a {
+  color: #ffffff;
+}
+.navigation-footer {
+  list-style: none;
+}
+.useful-links ul {
+  list-style: none;
+}
