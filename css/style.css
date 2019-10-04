@@ -5,11 +5,9 @@ body {
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-  color: #ffffff;
+  color: #000000;
   background-color: #ffffff;
-  background-position: top center;
-  background-repeat: no-repeat;
-}
+  }
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -20,17 +18,98 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-header {
+.technomart {
   background-color: #f3f7f8;
+}
+.checkout {
+  width: 150px;
+  height: 42px;
+  background-color: #63a63e;
+}
+.checkout a:hover{
+  background-color: #5fbb2d;
+}
+.checkout a:active {
+  background-color: #518534;
+}
+.breadcrumbs {
+  list-style: none;
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.breadcrumbs a {
+  color: #000000;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  text-decoration: underline;
+}
+
+.breadcrumbs-current {
+  color: #aba9a7;
 }
 a {
   text-decoration: none;
 }
-.logo {
+.perforator {
+  color: #32425c;
+  font-family: Cuprum;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  width: 940px;
+  height: 89px;
+  background-color: #f2f6f8;
+}
+.filter fieldset {
+  border: none;
+}
+.filter legend {
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.filter ul {
+  list-style:none;
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+
+}
+.logo-container {
+  width: 220px;
+  height: 47px;
   box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
+  background-image: url(img/content_img/logo-background.png);
+}
+.logo {
+  height:19px;
+  width:109px;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-top: 13px;
+  padding-bottom: 15px;
+}
+.logo a:hover,
+.logo a:focus {
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+  background-color: #ca2c37;
 }
 .this-shop {
+  text-decoration: none;
   color: #ee3643;
   font-family: Cuprum;
   font-size: 16px;
@@ -38,16 +117,17 @@ a {
   line-height: 23px;
   text-transform: none;
 }
-.contacts {
-  border: 3px solid #ffffff;
+.technomart .contacts {
   color: #e9292a;
+  text-decoration: none;
+  border: 3px solid #ffffff;
   font-family: Cuprum;
   font-size: 21px;
   font-weight: 400;
   line-height: 21px;
 }
 .adress {
-  color: #32425c;
+  color: #e9292a;
   font-family: Cuprum;
   font-size: 14px;
   font-weight: 400;
@@ -63,6 +143,8 @@ a {
   background-color: #293449;
 }
 .user-navigation {
+  width: 121px;
+  height: 45px;
   color: #000000;
   font-family: Cuprum;
   font-size: 21px;
@@ -150,7 +232,7 @@ a {
 .select-service {
   list-style: none;
 }
-.select-service button {
+.select-service a {
   width: 240px;
   height: 61px;
   box-shadow: 0 1px 0 #293449, inset 0 1px 0 #405069;
@@ -161,11 +243,11 @@ a {
   font-weight: 700;
   line-height: 30px;
 }
-.select-service button:hover,
-.select-service button:focus {
+.select-service a:hover,
+.select-service a:focus {
   background-color: #293449;
 }
-.select-service button:active {
+.select-service a:active {
   background-color: #ffffff;
   color: #32425c;
   font-family: Cuprum;
@@ -190,11 +272,29 @@ a {
   line-height: 24px;
   text-transform: none;
 }
-.line li::before {
-  width: 25px;
-  height: 2px;
+.delivery {
+  list-style:none;
+  font-family: Cuprum;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: none;
+  color: #000000;
+}
+.services-content {
+  width:960px;
+  height:300px;
+  overflow:hidden;
+}
+.services-content ul {
   list-style: none;
-  background-color: #ee3643;
+  height: 320px;
+  overflow: scroll;
+  overflow-y: hidden;
+}
+.services-contentent ul li {
+  width:960px;
+  height:300px;
 }
 .click {
   color: #ffffff;
@@ -209,8 +309,17 @@ a {
   padding-inline-start: 47px;
   padding-right: 47px;
   padding-left: 47px;
+  border-radius:3px;
 }
+.click:hover,
+.click:focus {
+  background-color: #ca2c37;
+}
+.click:active {
 
+  background-color: #ba2732;
+
+}
 footer {
   background-color: #32425c;
 }
@@ -220,7 +329,153 @@ footer {
 }
 .navigation-footer {
   list-style: none;
+  color: #f1f5f7;
+  font-family: Cuprum;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+
 }
-.useful-links ul {
+.navigation-footer a:hover {
+  text-decoration: underline;
+}
+.navigation-footer a:active {
+  opacity: 0.5;
+  color: #f1f5f7;
+  font-family: Cuprum;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration: none;
+}
+.footer-catalog li {
   list-style: none;
+}
+.footer-catalog a{
+  list-style: none;
+  color: #ffd180;;
+  font-family: Cuprum;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.footer-catalog a:hover {
+  color: #ffd180;
+  font-family: Cuprum;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration: underline;
+}
+.footer-catalog a:active {
+  opacity: 0.5;
+  color: #ffd180;
+  font-family: Cuprum;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+
+}
+.useful-links a {
+  list-style: none;
+  color:#ffffff;
+}
+.footer-logocontainer {
+  width: 220px;
+  height: 68px;
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
+}
+.footer-logo {
+  height:23px;
+  width:138px;
+  padding-left: 41px;
+  padding-right: 41px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+.contacts {
+  list-style: none;
+  color: #ffffff;
+  width: 135px;
+  height: 32px;
+  font-family: Cuprum;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  border: 0px;
+}
+.footer-bottom {
+  background-color:#293449;
+}
+.contacts a {
+  list-style: none;
+  color: #ffd180;
+  width: 135px;
+  height: 32px;
+  font-family: Cuprum;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  border: 0px;
+}
+.catalog-perforator {
+  list-style:none;
+ }
+.catalog-item {
+  width: 220px;
+  height: 318px;
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+}
+.catalog-item:hover {
+  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+  background-color: #ffffff;
+}
+.catalog-item a {
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.catalog-item h3 {
+  font-size: 14px;
+  line-height: 18px;
+}
+.price b {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  background-color:#ee3643;
+  border-radius: 6px;
+  padding-top: 13px;
+  padding-bottom:13px;
+  padding-left:36px;
+  padding-right:36px;
+  position: relative;
+}
+.price b:after{
+  content: '';
+  position: absolute;
+  left: 135px; bottom: 0px;
+  border: 23px solid transparent;
+  border-left: 20px solid #ee3643;;
+}
+.previous-price {
+  color: #999999;
+  font-family: "PT Sans";
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration: line-through;
+  text-transform: uppercase;
+
+}
+.pop-up-to-buy {
+  display:none;
 }
